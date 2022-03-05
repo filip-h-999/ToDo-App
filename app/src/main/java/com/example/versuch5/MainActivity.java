@@ -39,29 +39,18 @@ public class MainActivity extends AppCompatActivity {
         fabClosed = AnimationUtils.loadAnimation(this,R.anim.fab_close);
 
         fab.setOnClickListener(v -> animationFab());
-        fab2.setOnClickListener(v -> {
-            ((EditText)findViewById(R.id.newTaskText)).setText("");
-            ((CheckBox)findViewById(R.id.checkBox)).setChecked(false);
-        });
-        fab3.setOnClickListener(v -> {
-            ((EditText)findViewById(R.id.newTaskText2)).setText("");
-            ((CheckBox)findViewById(R.id.checkBox2)).setChecked(false);
-        });
-        fab4.setOnClickListener(v -> {
-            ((EditText)findViewById(R.id.newTaskText3)).setText("");
-            ((CheckBox)findViewById(R.id.checkBox3)).setChecked(false);
-        });
-        fab5.setOnClickListener(v -> {
-            ((EditText)findViewById(R.id.newTaskText5)).setText("");
-            ((CheckBox)findViewById(R.id.checkBox5)).setChecked(false);
-        });
-        fab6.setOnClickListener(v -> {
-            ((EditText)findViewById(R.id.newTaskText6)).setText("");
-            ((CheckBox)findViewById(R.id.checkBox7)).setChecked(false);
-        });
-        fab7.setOnClickListener(v -> {
-            ((EditText)findViewById(R.id.newTaskText4)).setText("");
-            ((CheckBox)findViewById(R.id.checkBox4)).setChecked(false);
+        setFabListener(fab2,R.id.newTaskText,R.id.checkBox);
+        setFabListener(fab3,R.id.newTaskText2,R.id.checkBox2);
+        setFabListener(fab4,R.id.newTaskText3,R.id.checkBox3);
+        setFabListener(fab5,R.id.newTaskText4,R.id.checkBox4);
+        setFabListener(fab6,R.id.newTaskText5,R.id.checkBox5);
+        setFabListener(fab7,R.id.newTaskText6,R.id.checkBox7);
+    }
+
+    private void setFabListener(FloatingActionButton f, int e, int x){
+        f.setOnClickListener(v -> {
+            ((EditText)findViewById(e)).setText("");
+            ((CheckBox)findViewById(x)).setChecked(false);
         });
     }
 
@@ -174,64 +163,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void changeTextColor(){
-        CheckBox check = findViewById(R.id.checkBox);
-        CheckBox check2 = findViewById(R.id.checkBox2);
-        CheckBox check3 = findViewById(R.id.checkBox3);
-        CheckBox check4 = findViewById(R.id.checkBox4);
-        CheckBox check5 = findViewById(R.id.checkBox5);
-        CheckBox check6 = findViewById(R.id.checkBox7);
+        setCheckBoxListener(findViewById(R.id.checkBox),findViewById(R.id.newTaskText));
+        setCheckBoxListener(findViewById(R.id.checkBox2),findViewById(R.id.newTaskText2));
+        setCheckBoxListener(findViewById(R.id.checkBox3),findViewById(R.id.newTaskText3));
+        setCheckBoxListener(findViewById(R.id.checkBox4),findViewById(R.id.newTaskText4));
+        setCheckBoxListener(findViewById(R.id.checkBox5),findViewById(R.id.newTaskText5));
+        setCheckBoxListener(findViewById(R.id.checkBox7),findViewById(R.id.newTaskText6));
+    }
 
-        EditText task1 = (findViewById(R.id.newTaskText));
-        EditText task2 = (findViewById(R.id.newTaskText2));
-        EditText task3 = (findViewById(R.id.newTaskText3));
-        EditText task4 = (findViewById(R.id.newTaskText4));
-        EditText task5 = (findViewById(R.id.newTaskText5));
-        EditText task6 = (findViewById(R.id.newTaskText6));
-
-        check.setOnClickListener(v -> {
-            if(check.isChecked()){
-                task1.setTextColor(Color.GREEN);
+    private void setCheckBoxListener(CheckBox c, EditText t){
+        c.setOnClickListener(v -> {
+            if(c.isChecked()){
+                t.setTextColor(Color.GREEN);
             }else{
-                task1.setTextColor(Color.BLACK);
+                t.setTextColor(Color.BLACK);
             }
         });
-        check2.setOnClickListener(v -> {
-            if(check2.isChecked()){
-                task2.setTextColor(Color.GREEN);
-            }else{
-                task2.setTextColor(Color.BLACK);
-            }
-        });
-        check3.setOnClickListener(v -> {
-            if(check3.isChecked()){
-                task3.setTextColor(Color.GREEN);
-            }else{
-                task3.setTextColor(Color.BLACK);
-            }
-        });
-        check4.setOnClickListener(v -> {
-            if(check4.isChecked()){
-                task4.setTextColor(Color.GREEN);
-            }else{
-                task4.setTextColor(Color.BLACK);
-            }
-        });
-        check5.setOnClickListener(v -> {
-            if(check5.isChecked()){
-                task5.setTextColor(Color.GREEN);
-            }else{
-                task5.setTextColor(Color.BLACK);
-            }
-        });
-        check6.setOnClickListener(v -> {
-            if(check6.isChecked()){
-                task6.setTextColor(Color.GREEN);
-            }else{
-                task6.setTextColor(Color.BLACK);
-            }
-        });
-
-
     }
 
     @Override
