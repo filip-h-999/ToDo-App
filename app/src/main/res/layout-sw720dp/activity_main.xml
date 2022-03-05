@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00FFF7"
+        android:clickable="true"
+        android:tooltipText="1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton6" />
+
+    <EditText
+        android:id="@+id/newTaskText4"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:hint="sixth task..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/checkBox7"
+        app:layout_constraintTop_toBottomOf="@+id/newTaskText6"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="3dp"
+        android:buttonTint="#00FFF7"
+        app:layout_constraintEnd_toStartOf="@+id/newTaskText6"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2FFF00"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FF9800"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FF0000"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/newTaskText6"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:hint="fifth task..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/checkBox7"
+        app:layout_constraintTop_toBottomOf="@+id/newTaskText5"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginBottom="2dp"
+        android:buttonTint="#2FFF00"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+        app:layout_constraintEnd_toStartOf="@+id/newTaskText6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginBottom="2dp"
+        android:buttonTint="#FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox7"
+        app:layout_constraintEnd_toStartOf="@+id/newTaskText5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/newTaskText5"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="4dp"
+        android:background="@null"
+        android:hint="forth task..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/newTaskText6"
+        app:layout_constraintStart_toEndOf="@+id/checkBox5"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/newTaskText3"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="4dp"
+        android:background="@null"
+        android:hint="third task..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/newTaskText5"
+        app:layout_constraintStart_toEndOf="@+id/checkBox3"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginBottom="2dp"
+        android:buttonTint="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox5"
+        app:layout_constraintEnd_toStartOf="@+id/newTaskText3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/newTaskText2"
+        android:layout_width="331dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@null"
+        android:hint="second task..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/newTaskText3"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:buttonTint="#8000FF"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintEnd_toStartOf="@+id/newTaskText2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tasksText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="24dp"
+        android:text="Tasks:"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="54dp"
+        android:background="@null"
+        android:hint="firt task..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/newTaskText2"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/tasksText"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="53dp"
+        android:buttonTint="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintEnd_toStartOf="@+id/newTaskText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasksText" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#A0FF07"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#2196F3"
+        android:clickable="true"
+        android:text="@string/_1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#8000FF"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
