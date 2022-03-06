@@ -189,8 +189,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setCheckBoxListener(CheckBox c, EditText t){
-        c.setOnClickListener(v -> {
-            if(c.isChecked()){
+        c.setOnCheckedChangeListener((v, checked) -> {
+            if(checked){
                 t.setTextColor(Color.GREEN);
             }else{
                 t.setTextColor(Color.BLACK);
