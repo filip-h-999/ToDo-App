@@ -20,6 +20,7 @@
         android:textColorHint="#CACACA"
         android:textStyle="bold"
         android:inputType="text"
+        android:maxLength="30"
         app:layout_constraintStart_toEndOf="@+id/checkBox6"
         app:layout_constraintTop_toBottomOf="@+id/newTaskText4"
         tools:ignore="MissingConstraints" />
@@ -75,6 +76,7 @@
         android:textColorHint="#CACACA"
         android:textStyle="bold"
         android:inputType="text"
+        android:maxLength="30"
         app:layout_constraintStart_toEndOf="@+id/checkBox4"
         app:layout_constraintTop_toBottomOf="@+id/newTaskText6"
         tools:ignore="MissingConstraints" />
@@ -83,7 +85,7 @@
         android:id="@+id/checkBox4"
         android:layout_width="42dp"
         android:layout_height="36dp"
-        android:layout_marginStart="31dp"
+        android:layout_marginStart="32dp"
         android:layout_marginEnd="3dp"
         android:buttonTint="#00FFF7"
         app:layout_constraintEnd_toStartOf="@+id/newTaskText4"
@@ -143,6 +145,7 @@
         android:textColorHint="#CACACA"
         android:textStyle="bold"
         android:inputType="text"
+        android:maxLength="30"
         app:layout_constraintStart_toEndOf="@+id/checkBox7"
         app:layout_constraintTop_toBottomOf="@+id/newTaskText5"
         tools:ignore="MissingConstraints" />
@@ -185,6 +188,7 @@
         android:textColorHint="#CACACA"
         android:textStyle="bold"
         android:inputType="text"
+        android:maxLength="30"
         app:layout_constraintBottom_toTopOf="@+id/newTaskText6"
         app:layout_constraintStart_toEndOf="@+id/checkBox5"
         tools:ignore="MissingConstraints" />
@@ -203,6 +207,7 @@
         android:textColorHint="#CACACA"
         android:textStyle="bold"
         android:inputType="text"
+        android:maxLength="30"
         app:layout_constraintBottom_toTopOf="@+id/newTaskText5"
         app:layout_constraintStart_toEndOf="@+id/checkBox3"
         tools:ignore="MissingConstraints" />
@@ -233,6 +238,7 @@
         android:textColorHint="#CACACA"
         android:textStyle="bold"
         android:inputType="text"
+        android:maxLength="30"
         app:layout_constraintBottom_toTopOf="@+id/newTaskText3"
         app:layout_constraintStart_toEndOf="@+id/checkBox2"
         tools:ignore="MissingConstraints" />
@@ -272,12 +278,13 @@
         android:layout_marginTop="53dp"
         android:layout_marginBottom="2dp"
         android:background="@null"
-        android:hint="firt task..."
+        android:hint="first task..."
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/black"
         android:textColorHint="#CACACA"
         android:textStyle="bold"
         android:inputType="text"
+        android:maxLength="30"
         app:layout_constraintBottom_toTopOf="@+id/newTaskText2"
         app:layout_constraintStart_toEndOf="@+id/checkBox"
         app:layout_constraintTop_toBottomOf="@+id/tasksText"
