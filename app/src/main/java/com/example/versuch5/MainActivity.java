@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         setFabListener(fab4,R.id.newTaskText3,R.id.checkBox3);
         setFabListener(fab5,R.id.newTaskText4,R.id.checkBox4);
         setFabListener(fab6,R.id.newTaskText5,R.id.checkBox5);
-        setFabListener(fab7,R.id.newTaskText6,R.id.checkBox7);
-        setFabListener(fab8,R.id.newTaskText7,R.id.checkBox6);
+        setFabListener(fab7,R.id.newTaskText6,R.id.checkBox6);
+        setFabListener(fab8,R.id.newTaskText7,R.id.checkBox7);
     }
 
     private void setFabListener(FloatingActionButton f, int e, int x){
@@ -116,11 +116,11 @@ public class MainActivity extends AppCompatActivity {
         String task3 = prefs.getString("task3", "");
         ((EditText)findViewById(R.id.newTaskText3)).setText(task3);
         String task4 = prefs.getString("task4", "");
-        ((EditText)findViewById(R.id.newTaskText5)).setText(task4);
+        ((EditText)findViewById(R.id.newTaskText4)).setText(task4);
         String task5 = prefs.getString("task5", "");
-        ((EditText)findViewById(R.id.newTaskText6)).setText(task5);
+        ((EditText)findViewById(R.id.newTaskText5)).setText(task5);
         String task6 = prefs.getString("task6", "");
-        ((EditText)findViewById(R.id.newTaskText4)).setText(task6);
+        ((EditText)findViewById(R.id.newTaskText6)).setText(task6);
         String task7 = prefs.getString("task7", "");
         ((EditText)findViewById(R.id.newTaskText7)).setText(task7);
 
@@ -131,13 +131,13 @@ public class MainActivity extends AppCompatActivity {
         boolean check3 = prefs.getBoolean("check3", false);
         ((CheckBox)findViewById(R.id.checkBox3)).setChecked(check3);
         boolean check4 = prefs.getBoolean("check4", false);
-        ((CheckBox)findViewById(R.id.checkBox5)).setChecked(check4);
+        ((CheckBox)findViewById(R.id.checkBox4)).setChecked(check4);
         boolean check5 = prefs.getBoolean("check5", false);
-        ((CheckBox)findViewById(R.id.checkBox7)).setChecked(check5);
+        ((CheckBox)findViewById(R.id.checkBox5)).setChecked(check5);
         boolean check6 = prefs.getBoolean("check6", false);
-        ((CheckBox)findViewById(R.id.checkBox4)).setChecked(check6);
+        ((CheckBox)findViewById(R.id.checkBox6)).setChecked(check6);
         boolean check7 = prefs.getBoolean("check7", false);
-        ((CheckBox)findViewById(R.id.checkBox6)).setChecked(check7);
+        ((CheckBox)findViewById(R.id.checkBox7)).setChecked(check7);
     }
 
     public void saveData(){
@@ -146,18 +146,18 @@ public class MainActivity extends AppCompatActivity {
         String task1 =  ((EditText)findViewById(R.id.newTaskText)).getText().toString();
         String task2 =  ((EditText)findViewById(R.id.newTaskText2)).getText().toString();
         String task3 =  ((EditText)findViewById(R.id.newTaskText3)).getText().toString();
-        String task4 =  ((EditText)findViewById(R.id.newTaskText5)).getText().toString();
-        String task5 =  ((EditText)findViewById(R.id.newTaskText6)).getText().toString();
-        String task6 =  ((EditText)findViewById(R.id.newTaskText4)).getText().toString();
+        String task4 =  ((EditText)findViewById(R.id.newTaskText4)).getText().toString();
+        String task5 =  ((EditText)findViewById(R.id.newTaskText5)).getText().toString();
+        String task6 =  ((EditText)findViewById(R.id.newTaskText6)).getText().toString();
         String task7 =  ((EditText)findViewById(R.id.newTaskText7)).getText().toString();
 
         boolean box1 = ((CheckBox)findViewById(R.id.checkBox)).isChecked();
         boolean box2 = ((CheckBox)findViewById(R.id.checkBox2)).isChecked();
         boolean box3 = ((CheckBox)findViewById(R.id.checkBox3)).isChecked();
-        boolean box4 = ((CheckBox)findViewById(R.id.checkBox5)).isChecked();
-        boolean box5 = ((CheckBox)findViewById(R.id.checkBox7)).isChecked();
-        boolean box6 = ((CheckBox)findViewById(R.id.checkBox4)).isChecked();
-        boolean box7 = ((CheckBox)findViewById(R.id.checkBox6)).isChecked();
+        boolean box4 = ((CheckBox)findViewById(R.id.checkBox4)).isChecked();
+        boolean box5 = ((CheckBox)findViewById(R.id.checkBox5)).isChecked();
+        boolean box6 = ((CheckBox)findViewById(R.id.checkBox6)).isChecked();
+        boolean box7 = ((CheckBox)findViewById(R.id.checkBox7)).isChecked();
 
         SharedPreferences.Editor editor = prefs.edit();
         editor.putBoolean("check1",box1);
@@ -184,8 +184,8 @@ public class MainActivity extends AppCompatActivity {
         setCheckBoxListener(findViewById(R.id.checkBox3),findViewById(R.id.newTaskText3));
         setCheckBoxListener(findViewById(R.id.checkBox4),findViewById(R.id.newTaskText4));
         setCheckBoxListener(findViewById(R.id.checkBox5),findViewById(R.id.newTaskText5));
-        setCheckBoxListener(findViewById(R.id.checkBox7),findViewById(R.id.newTaskText6));
-        setCheckBoxListener(findViewById(R.id.checkBox6),findViewById(R.id.newTaskText7));
+        setCheckBoxListener(findViewById(R.id.checkBox6),findViewById(R.id.newTaskText6));
+        setCheckBoxListener(findViewById(R.id.checkBox7),findViewById(R.id.newTaskText7));
     }
 
     private void setCheckBoxListener(CheckBox c, EditText t){

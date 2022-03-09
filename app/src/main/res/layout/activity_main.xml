@@ -21,12 +21,12 @@
         android:textStyle="bold"
         android:inputType="text"
         android:maxLength="30"
-        app:layout_constraintStart_toEndOf="@+id/checkBox6"
-        app:layout_constraintTop_toBottomOf="@+id/newTaskText4"
+        app:layout_constraintStart_toEndOf="@+id/checkBox7"
+        app:layout_constraintTop_toBottomOf="@+id/newTaskText6"
         tools:ignore="MissingConstraints" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/checkBox7"
         android:layout_width="42dp"
         android:layout_height="36dp"
         android:layout_marginStart="32dp"
@@ -34,7 +34,7 @@
         android:buttonTint="#0004FF"
         app:layout_constraintEnd_toStartOf="@+id/newTaskText7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton7"
@@ -64,7 +64,7 @@
         app:layout_constraintEnd_toStartOf="@+id/floatingActionButton7" />
 
     <EditText
-        android:id="@+id/newTaskText4"
+        android:id="@+id/newTaskText6"
         android:layout_width="330dp"
         android:layout_height="35dp"
         android:layout_marginStart="3dp"
@@ -77,20 +77,20 @@
         android:textStyle="bold"
         android:inputType="text"
         android:maxLength="30"
-        app:layout_constraintStart_toEndOf="@+id/checkBox4"
-        app:layout_constraintTop_toBottomOf="@+id/newTaskText6"
+        app:layout_constraintStart_toEndOf="@+id/checkBox6"
+        app:layout_constraintTop_toBottomOf="@+id/newTaskText5"
         tools:ignore="MissingConstraints" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/checkBox6"
         android:layout_width="42dp"
         android:layout_height="36dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="3dp"
         android:buttonTint="#00FFF7"
-        app:layout_constraintEnd_toStartOf="@+id/newTaskText4"
+        app:layout_constraintEnd_toStartOf="@+id/newTaskText6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton6"
@@ -132,7 +132,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/newTaskText6"
+        android:id="@+id/newTaskText5"
         android:layout_width="330dp"
         android:layout_height="35dp"
         android:layout_marginStart="3dp"
@@ -146,21 +146,9 @@
         android:textStyle="bold"
         android:inputType="text"
         android:maxLength="30"
-        app:layout_constraintStart_toEndOf="@+id/checkBox7"
-        app:layout_constraintTop_toBottomOf="@+id/newTaskText5"
+        app:layout_constraintStart_toEndOf="@+id/checkBox5"
+        app:layout_constraintTop_toBottomOf="@+id/newTaskText4"
         tools:ignore="MissingConstraints" />
-
-    <CheckBox
-        android:id="@+id/checkBox7"
-        android:layout_width="42dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginBottom="2dp"
-        android:buttonTint="#2FFF00"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
-        app:layout_constraintEnd_toStartOf="@+id/newTaskText6"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox5"
@@ -169,13 +157,25 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="2dp"
-        android:buttonTint="#FF9800"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox7"
+        android:buttonTint="#2FFF00"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox6"
         app:layout_constraintEnd_toStartOf="@+id/newTaskText5"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="2dp"
+        android:buttonTint="#FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox5"
+        app:layout_constraintEnd_toStartOf="@+id/newTaskText4"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <EditText
-        android:id="@+id/newTaskText5"
+        android:id="@+id/newTaskText4"
         android:layout_width="330dp"
         android:layout_height="35dp"
         android:layout_marginStart="3dp"
@@ -189,8 +189,8 @@
         android:textStyle="bold"
         android:inputType="text"
         android:maxLength="30"
-        app:layout_constraintBottom_toTopOf="@+id/newTaskText6"
-        app:layout_constraintStart_toEndOf="@+id/checkBox5"
+        app:layout_constraintBottom_toTopOf="@+id/newTaskText5"
+        app:layout_constraintStart_toEndOf="@+id/checkBox4"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -208,7 +208,7 @@
         android:textStyle="bold"
         android:inputType="text"
         android:maxLength="30"
-        app:layout_constraintBottom_toTopOf="@+id/newTaskText5"
+        app:layout_constraintBottom_toTopOf="@+id/newTaskText4"
         app:layout_constraintStart_toEndOf="@+id/checkBox3"
         tools:ignore="MissingConstraints" />
 
@@ -220,7 +220,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="2dp"
         android:buttonTint="#FF0000"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox5"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
         app:layout_constraintEnd_toStartOf="@+id/newTaskText3"
         app:layout_constraintStart_toStartOf="parent" />
 
