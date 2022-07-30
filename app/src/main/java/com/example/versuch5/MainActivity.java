@@ -140,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
         ((CheckBox)findViewById(R.id.checkBox7)).setChecked(check7);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public void saveData(){
         SharedPreferences prefs = getSharedPreferences("Data", MODE_PRIVATE);
 
@@ -198,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     @Override
     protected void onStop() {
         saveData();
